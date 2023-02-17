@@ -3,8 +3,8 @@
 ## Tasks
 
 * index.Rmd - Oscar
-* sumInfo.R - Elisha
-* sumTable.R - Kaylina
+* sumInfo.R - Kaylina
+* sumTable.R - Elisha
 * chart1.R - Baltej
-* chart2.R - Kaylina
-* Chart3.R - Elisha
+* chart2.R - Baltej
+* Chart3.R - Kaylina
