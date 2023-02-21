@@ -1,0 +1,29 @@
+---
+title: "Is there a correlation betweeen fast food restaurants per state and obesity rates?"
+author: "Oscar Maldonado, Elisha Jeon, Kaylina Saetern, Baltej Singh"
+date: "02/20/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+    library(dplyr)
+    library(ggplot2)
+    library("scales")
+    food <- read.csv('fastfood.csv', stringsAsFactors = FALSE)
+    obesity <- read.csv('obesity.csv', stringsAsFactors = FALSE)
+    
+    # load states dataframe into variable `covid` and filter for most recent data
+    source('sumTable.R')
+    source('sumInfo.R')
+    source('chart1.R')
+    source('chart2.R')
+    source('chart3.R')
+
+```
+
+#INTRODUCTION
+
+```{r myplot}
+print(myplot)
+    
+```
