@@ -43,10 +43,16 @@ knitr::kable(agg_table,
 This 2017 obesity and fast food data includes 50 U.S. states and is organized from the state with the highest rate of obesity in adults to least. Additional information such as each state’s corresponding population, its poverty rate, the average age of adults with obesity, their average income, and availability to all fast food restaurants is included in the table. By providing this table, we can identify which states are most and least affected and compare their economic situations with each other to find potential patterns and significant differences. Our data shows that Mississippi is the most obese state with 35.2% of their adults with obesity. If we compare it to the least obese state Colorado with 20.2%, we see that that they have similar availability to all fast food chains. However, if we compare their incomes, those from Mississippi made around 13,000 dollars less than those from Colorado and their poverty rates had a 9.48% difference. It is evident that as you go down the table to the least obese states, the average income grows bigger and the poverty rates decreases.
 
 
-```{r myplot}
+```{r chart 3}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE)
     print(myplot)
 ```
 
 This is a map consisting of the prevalence of self-reported obesity by State and Territory in 2021. Each prevalence was calculated by the longitude and latitude categorized by each state in the US. From the map, we can see that the highest state for the most self-reported obesity rates in the US was Kentucky while the state with the least self-reported obesity rates in the US was Florida due to there being no data information found.
 
+```{r chart 1}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+print(scatter1)
+```
+
+ This chart represents the average obesity throughout the United States from 2014 to 2017. the X axis represents the years and the y axis represents the average obesity. Throughout these years the numbers didn't change much much thoughout the US, if anything they got a little worse. This matters because in recent history the numbers say that Americans haven't done a better job with obesity. One postive in this chart is that there is still hope because the rate only changed marginally. The purpose of this chart is to show that the obesity rate didn't get better for the American people and is nearly at .3 for all of the United States
