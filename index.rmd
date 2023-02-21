@@ -5,7 +5,8 @@ date: "02/20/2023"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
     library(dplyr)
     library(ggplot2)
     library("scales")
@@ -21,9 +22,31 @@ output: html_document
 
 ```
 
-#INTRODUCTION
+# INTRODUCTION
+Obesity is a serious and complex health issue with a wide range of negative consequences, highlighting the prevalence of this epidemic with efforts to promote healthy body weight and reduce the burden of this condition on individuals and society is crucial to fighting it.
+
+# Summary Information
+This data is from a 2021 survey on Obesity throughout the States (excluding Florida). As of 2021
+the average obesity throughout the states was `r avg`%, that means on average, a third of the population is
+classified as obese. With `r avg`% being the national average, only `r under_avg` states fall under the average with
+a low of `r min`,that is only barely less than half the states. `r over_avg` states (and some territories) are over the national obesity average of `r avg`% with a high of `r max`.
+
+# Aggregate Table
+```{r aggregate table}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+knitr::kable(agg_table,
+            col.names = c('State', 'Population', 'Adults with Obesity', 'Average Age', 'Average Income', ' Fast Food            Restaurants', 'Poverty Rate'),
+            caption = 'Obesity rates and Income and Fast food restaurants per 100,000 people'
+              )
+
+```
+This 2017 obesity and fast food data includes 50 U.S. states and is organized from the state with the highest rate of obesity in adults to least. Additional information such as each state’s corresponding population, its poverty rate, the average age of adults with obesity, their average income, and availability to all fast food restaurants is included in the table. By providing this table, we can identify which states are most and least affected and compare their economic situations with each other to find potential patterns and significant differences. Our data shows that Mississippi is the most obese state with 35.2% of their adults with obesity. If we compare it to the least obese state Colorado with 20.2%, we see that that they have similar availability to all fast food chains. However, if we compare their incomes, those from Mississippi made around 13,000 dollars less than those from Colorado and their poverty rates had a 9.48% difference. It is evident that as you go down the table to the least obese states, the average income grows bigger and the poverty rates decreases.
+
 
 ```{r myplot}
-print(myplot)
-    
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+    print(myplot)
 ```
+
+This is a map consisting of the prevalence of self-reported obesity by State and Territory in 2021. Each prevalence was calculated by the longitude and latitude categorized by each state in the US. From the map, we can see that the highest state for the most self-reported obesity rates in the US was Kentucky while the state with the least self-reported obesity rates in the US was Florida due to there being no data information found.
+
