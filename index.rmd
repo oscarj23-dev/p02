@@ -55,4 +55,11 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE)
 print(scatter1)
 ```
 
- This chart represents the average obesity throughout the United States from 2014 to 2017. the X axis represents the years and the y axis represents the average obesity. Throughout these years the numbers didn't change much much thoughout the US, if anything they got a little worse. This matters because in recent history the numbers say that Americans haven't done a better job with obesity. One postive in this chart is that there is still hope because the rate only changed marginally. The purpose of this chart is to show that the obesity rate didn't get better for the American people and is nearly at .3 for all of the United States
+This scatter plot shows the connection between the average obesity in the United States and fast food restaurants per 100k people. Why this chart is included is because we wanted to see if there is a connection between all the fast food places and obesity rate because of how easy it is to access. This chart has some outliers but for the most part where there are more fast food restaurants there is a higher obesity rate. From .3 to .35+ there is no less than 70 fast food restaurants per 100k people. Overall there is a correlation between these two factors.
+
+```{r chart 2}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+print(bar1)
+```
+
+This chart represents the average obesity throughout the United States from 2014 to 2017. the X axis represents the years and the y axis represents the average obesity. Throughout these years the numbers didn't change much much throughout the US, if anything they got a little worse. This matters because in recent history the numbers say that Americans haven't done a better job with obesity. One positive in this chart is that there is still hope because the rate only changed marginally. The purpose of this chart is to show that the obesity rate didn't get better for the American people and is nearly at .3 for all of the United States
